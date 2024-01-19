@@ -16,8 +16,11 @@
         <h1>{{message}}</h1>
         <!-- con v-text -->
         <h1 v-text="message"></h1>
-        <img :src="image.url" :alt="image.name">
 
+         <!-- Fatto con scorciatoia -->
+        <!-- <img :src="image.url" :alt="image.name"> -->
+
+        <img v-model:src="image.url" v-model:alt="image.name">
 
 
     </div>
